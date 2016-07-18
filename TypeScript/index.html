@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="fruitEditor">
+<head>
+    <title></title>
+</head>
+<body>
+    <div ng-controller="fruitCollection as vm">
+        Add Fruit:<br />
+        Name: <input type="text" ng-model="vm.NewFruitName" />
+        Color: <input type="text" ng-model="vm.NewFruitColor" />
+        <input type="button" ng-click="vm.Add()"  value="Add Fruit"/>
+       <ul>
+           <li ng-repeat="fruit in vm.fruits" >
+               <input contenteditable
+                    ng-model="fruit.Name"
+                    ng-style="{'background-color':fruit.Color}"style="padding:5px;" value="{{fruit.Name}}" />
+               <input type="button" value="Update" ng-click="vm.update(fruit)" />
+               <input type="button" value="Delete" ng-click="vm.delete(fruit)" />
+           </li>
+       </ul>
+    </div>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="App_Scripts/fruitEditor.js"></script>
+    <script src="App_Scripts/fruitCollection.js"></script>
+    <script src="App_Scripts/contentEditable.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="App_Scripts/fruitDataService.js"></script>
+</body>
+</html>

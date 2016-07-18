@@ -1,0 +1,6 @@
+G:\Development\Projects\TypeScript\TypeScript\bin\TypeScript.dll.config
+G:\Development\Projects\TypeScript\TypeScript\bin\TypeScript.dll
+G:\Development\Projects\TypeScript\TypeScript\bin\TypeScript.pdb
+G:\Development\Projects\TypeScript\TypeScript\obj\Debug\TypeScript.dll
+G:\Development\Projects\TypeScript\TypeScript\obj\Debug\TypeScript.pdb
+G:\Development\Projects\TypeScript\TypeScript\obj\Debug\TypeScript.csprojResolveAssemblyReference.cache
